@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
                 fontSize: 32)),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: Home(),
     );
   }
 }
