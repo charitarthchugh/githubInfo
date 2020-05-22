@@ -4,16 +4,20 @@ import 'package:githubInfo/components/RepositoryModel.dart';
 import 'package:http/http.dart';
 
 class githubAccess {
-  final String github= "https://api.github.com/users/charitarthchugh/repos";
+  final String _github = "https://api.github.com/users/charitarthchugh/repos";
+ 
   //https://developer.github.com/v3/users/
+  // ignore: missing_return
   Future<List<Repository>> getRepos() async {
-    Response res=await get(github);
-    if (res.statusCode==200) {
-        List<dynamic> body= jsonDecode(res.body);
-        List<Repository> repos= body.map((dynamic item) => Repository.fromJson(item));
-        return repos;
+    Response res =await get(_github);
+    try{ 
+      List<dynamic> body = jsonDecode(res.body);
+      List<Repository> repos =
+          body.map((dynamic item) => Repository.fromJson(item)).toList();
+      return repos;
+    } catch(err){
+      throw err.toString();
     }
-    else
-      print("Could not fetch.");
+
   }
 }
