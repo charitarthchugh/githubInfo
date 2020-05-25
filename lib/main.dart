@@ -23,18 +23,9 @@ class _MyAppState extends State<MyApp> {
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
         primarySwatch: Colors.white10,
-        textTheme: TextTheme(
-            subtitle2: GoogleFonts.openSans(
-                color: Colors.white70,
-                fontWeight: FontWeight.normal,
-                fontSize: 18),
-            headline6: GoogleFonts.poppins(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 32)),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Home(),
+      home: HomePage(),
     );
   }
 }

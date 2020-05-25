@@ -79,6 +79,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  font_awesome:
+    dependency: "direct main"
+    description:
+      name: font_awesome
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.10.1"
+  github:
+    dependency: "direct main"
+    description:
+      name: github
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "6.2.2"
   google_fonts:
     dependency: "direct main"
     description:
@@ -100,6 +114,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.4"
+  json_annotation:
+    dependency: transitive
+    description:
+      name: json_annotation
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.1"
   matcher:
     dependency: transitive
     description:
@@ -253,7 +274,7 @@ packages:
     source: hosted
     version: "1.0.7"
   url_launcher_web:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: url_launcher_web
       url: "https://pub.dartlang.org"
